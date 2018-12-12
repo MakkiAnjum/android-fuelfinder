@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "643025549801",
+    "firebase_url": "https://fuelfinder-192912.firebaseio.com",
+    "project_id": "fuelfinder-192912",
+    "storage_bucket": "fuelfinder-192912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643025549801:android:1a5db3a10d1928d3",
+        "android_client_info": {
+          "package_name": "app.fuelfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643025549801-s4v3e269l0gqa7c2tl69m2e00qa5kitg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdeZgJViWmrrIoG6ohZSN2SGAs91Ai8Lg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

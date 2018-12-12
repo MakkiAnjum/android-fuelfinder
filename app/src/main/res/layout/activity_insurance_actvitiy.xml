@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    tools:context="app.fuelfinder.InsuranceActvitiy">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/header"
+            android:text="Insurance details"
+            android:textColor="#fff"
+            android:textStyle="bold"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/car_login" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_vehical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/backgroud"
+        android:layout_below="@+id/Edit"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+        >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/vehical_header"
+        android:layout_width="wrap_content"
+        android:text="Vehical"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/vehical_header"
+        android:id="@+id/vehical_text"
+        android:layout_width="wrap_content"
+        android:text="Vehical"
+        android:textSize="18dp"
+
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@+id/vehical_header"
+        android:id="@+id/vehical_EditText"
+        android:layout_width="match_parent"
+        android:text="Vehical"
+        android:textSize="18dp"
+
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_insurance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/backgroud"
+        android:layout_below="@+id/card_view_vehical"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Insurance_header"
+            android:layout_width="wrap_content"
+            android:text="Insurance Provider"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/Insurance_header"
+            android:id="@+id/insurance_text"
+            android:layout_width="wrap_content"
+            android:text="Insurance"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_below="@+id/Insurance_header"
+            android:id="@+id/insurance_EditText"
+            android:layout_width="match_parent"
+            android:text="Insurance"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_ExpiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/backgroud"
+        android:layout_below="@+id/card_view_insurance"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+        >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/expiry_header"
+            android:layout_width="wrap_content"
+            android:text="Expiry date"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/expiry_header"
+            android:id="@+id/expiry_text"
+            android:layout_width="wrap_content"
+            android:text="Expiry date"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+        <DatePicker
+            android:id="@+id/expiry_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Insurance_header"
+            android:background="@color/white"
+            android:calendarTextColor="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/backgroud"
+        android:layout_below="@+id/card_view_ExpiryDate"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+        >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/status_header"
+            android:layout_width="wrap_content"
+            android:text="Status"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/status_header"
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:text="Insurance Status"
+            android:textSize="18dp"
+            android:textColor="#e21e1e"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_below="@+id/card_view_status"
+            android:id="@+id/save"
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/icon"
+            android:text="Edit" />
+
+</RelativeLayout>
+    </ScrollView>

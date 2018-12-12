@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    tools:context="app.fuelfinder.InsuranceActvitiy">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/header"
+            android:text="Mot and Road Tax"
+            android:textColor="#fff"
+            android:textStyle="bold"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/car_login" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_vehical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/backgroud"
+            android:layout_below="@+id/Edit"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/motExpiryDate_header"
+                    android:layout_width="wrap_content"
+                    android:text="MOT EXPIRY/RENEWAL DATE"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/motExpiryDate_header"
+                    android:id="@+id/motDate_text"
+                    android:layout_width="wrap_content"
+                    android:text="DD/MM/YYY"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <DatePicker
+                    android:layout_below="@+id/motExpiryDate_header"
+                    android:id="@+id/motDatePicker"
+                    android:layout_width="match_parent"
+                    android:text="Vehical"
+                    android:textSize="18dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/backgroud"
+            android:layout_below="@+id/card_view_vehical"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/motStatus_header"
+                    android:layout_width="wrap_content"
+                    android:text="Mot Status"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/motStatus_header"
+                    android:id="@+id/motStatus_text"
+                    android:layout_width="wrap_content"
+                    android:text="Active"
+                    android:textSize="18dp"
+                    android:textColor="@color/green"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_ExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/backgroud"
+            android:layout_below="@+id/card_view_insurance"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/roadTax_header"
+                    android:layout_width="wrap_content"
+                    android:text="Road Tax Expiry/Renewal Date"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/roadTax_header"
+                    android:id="@+id/roadTax_text"
+                    android:layout_width="wrap_content"
+                    android:text="Road Tax date"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <DatePicker
+                    android:id="@+id/roadTax_DatePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/roadTax_header"
+                    android:background="@color/white"
+                    android:calendarTextColor="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/backgroud"
+            android:layout_below="@+id/card_view_ExpiryDate"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/roadTaxStatus_header"
+                    android:layout_width="wrap_content"
+                    android:text="Status"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/roadTaxStatus_header"
+                    android:id="@+id/roadStatus_text"
+                    android:layout_width="wrap_content"
+                    android:text="Active"
+                    android:textSize="18dp"
+                    android:textColor="@color/green"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_below="@+id/card_view_status"
+            android:id="@+id/save"
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/icon"
+            android:text="Edit" />
+
+    </RelativeLayout>
+</ScrollView>
